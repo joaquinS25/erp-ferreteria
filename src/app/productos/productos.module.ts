@@ -6,6 +6,7 @@ import { ProductosDashboardComponent } from './pages/productos-dashboard/product
 import { ProductosEditComponent } from './pages/productos-edit/productos-edit.component';
 import { ProductosComponent } from './productos.component';
 import { SharedModule } from '../shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     ProductosRoutingModule,
-    SharedModule
+    SharedModule,
+    RouterModule.forChild([])
   ]
 })
 export class ProductosModule { }
